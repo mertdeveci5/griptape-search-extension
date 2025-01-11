@@ -1,7 +1,7 @@
 from griptape.structures import Agent
-from griptape.extension_name.tools.reverse_string import ReverseStringTool
+from griptape.apollo.tools.apollo import ApooloClient
 
 
-agent = Agent(tools=[ReverseStringTool()])
+agent = Agent(tools=[ApooloClient()])
 
-agent.run("Use the ReverseStringTool to reverse 'Griptape'")
+agent.run("Find me account executives working in AI startups in new york")
